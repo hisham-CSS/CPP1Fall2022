@@ -98,5 +98,12 @@ public class PlayerController : MonoBehaviour
         if (hInput != 0)
             sr.flipX = (hInput < 0);
 
+        if (isGrounded)
+            rb.gravityScale = 1;
+    }
+
+    public void IncreaseGravity()
+    {
+        rb.gravityScale = 5;
     }
 }
