@@ -125,7 +125,7 @@ TextureImporter:
         width: 5113
         height: 431
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,6 +133,69 @@ TextureImporter:
       bones: []
       spriteID: 6b3db7d0606905849a2e2bf3b4eab427
       internalID: -64190346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coin
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 139
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07e6deb9f98a494082c0683ecaaad8e
+      internalID: -212453527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigCoin
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 134
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8dccae8f191f04a8bd75626963becc
+      internalID: -750557409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Life
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 84
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83119f006d70bc543a03addb75047378
+      internalID: -1349757498
       vertices: []
       indices: 
       edges: []
@@ -148,6 +211,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      DonutPlains1_DONE_0: -1552349228
+      DonutPlains1_DONE_3: 1562157178
+      Life: -1349757498
+      BigCoin: -750557409
+      Coin: -212453527
       Level: -64190346
   spritePackingTag: 
   pSDRemoveMatte: 0
