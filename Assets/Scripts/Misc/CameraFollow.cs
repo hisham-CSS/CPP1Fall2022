@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform player;
-
     public float minXClamp;
     public float maxXClamp;
 
@@ -15,13 +13,16 @@ public class CameraFollow : MonoBehaviour
     void LateUpdate()
     {
         //if (!isScrollingUp)
-        //{ 
-        Vector3 cameraPosition;
+        //{
+        if (GameManager.instance.playerInstance)
+        {
+            Vector3 cameraPosition;
 
-        cameraPosition = transform.position;
-        cameraPosition.x = Mathf.Clamp(player.transform.position.x, minXClamp, maxXClamp);
+            cameraPosition = transform.position;
+            cameraPosition.x = Mathf.Clamp(GameManager.instance.playerInstance.transform.position.x, minXClamp, maxXClamp);
 
-        transform.position = cameraPosition;
+            transform.position = cameraPosition;
+        }
         //}
         //else
         //{
