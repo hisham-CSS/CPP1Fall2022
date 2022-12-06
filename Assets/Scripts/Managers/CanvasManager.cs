@@ -34,6 +34,7 @@ public class CanvasManager : MonoBehaviour
     void StartGame()
     {
         SceneManager.LoadScene("Level");
+        Time.timeScale = 1.0f;
     }
 
     void ShowSettingsMenu()
@@ -87,6 +88,7 @@ public class CanvasManager : MonoBehaviour
     {
         //unpause the game
         pauseMenu.SetActive(false);
+        Time.timeScale = 1.0f;
     }
 
     void UpdateLifeText(int value)
@@ -146,9 +148,11 @@ public class CanvasManager : MonoBehaviour
                 if (pauseMenu.activeSelf)
                 {
                     //do something to pause
+                    Time.timeScale = 0.0f;
                 }
                 else
                 {
+                    Time.timeScale = 1.0f;
                     //do something to unpause
                 }
             }

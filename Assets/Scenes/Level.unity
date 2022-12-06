@@ -1210,6 +1210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cca69ed951801e44087ac68b4e256e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMixer: {fileID: 0}
   startButton: {fileID: 0}
   settingsButton: {fileID: 0}
   quitButton: {fileID: 260131239}
@@ -1219,8 +1220,10 @@ MonoBehaviour:
   settingsMenu: {fileID: 0}
   pauseMenu: {fileID: 680481636}
   livesText: {fileID: 1094156604}
-  volSliderText: {fileID: 0}
-  volSlider: {fileID: 0}
+  musicSliderText: {fileID: 0}
+  sfxSliderText: {fileID: 0}
+  musicVolSlider: {fileID: 0}
+  sfxVolSlider: {fileID: 0}
 --- !u!114 &919555084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2130,6 +2133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHeath: 1
   projectileFireRate: 5
+  turretFireDistance: 3
 --- !u!82 &1195507609
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2238,6 +2242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7552708f2124ca547bed7590cbac38f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxGroup: {fileID: 0}
+  musicGroup: {fileID: 0}
 --- !u!1 &1214637622
 GameObject:
   m_ObjectHideFlags: 0
